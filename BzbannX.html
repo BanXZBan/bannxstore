@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bzbannX Store - Roblox Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a1a40, #3c3c82);
+      color: #f1f1f1;
+      transition: background 0.6s ease;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(20, 20, 60, 0.8);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .dark-btn {
+      background-color: #1a1a40;
+      color: #f1f1f1;
+    }
+
+    .white-btn {
+      background-color: #f1f1f1;
+      color: #1a1a40;
+    }
+
+    nav button:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideIn 1s ease-out;
+    }
+
+    .product {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .testimonials {
+      margin-top: 50px;
+    }
+
+    .testimonial {
+      background: rgba(0, 0, 50, 0.3);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .contact a:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome To bzbannX Store!</h1>
+    <p>Your Roblox Grow A Garden Game Supplier - Fruits, Pets, and Currency</p>
+    <nav>
+      <button class="dark-btn" onclick="scrollToSection('products')">Products</button>
+      <button class="white-btn" onclick="scrollToSection('testimonials')">Testimonials</button>
+      <button class="dark-btn" onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product">
+      <h3>Sheckels</h3>
+      <p>buy in-game coins to buy tools and seeds.</p>
+    </div>
+    <div class="product">
+      <h3>Exclusive Pets</h3>
+      <p>Unlock rare pets to make your garden more beautiful and pro looking.</p>
+    </div>
+    <div class="product">
+      <h3>Premium fruits</h3>
+      <p>Get the best value of fruit we sell.</p>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"I got my items within minutes! This shop is 100% legit." -@RazorBlitz</p>
+    </div>
+    <div class="testimonial">
+      <p>"Best support ever! Helped me pick the perfect bundle." -@CocoBuilder</p>
+    </div>
+    <div class="testimonial">
+      <p>"Boosts worked perfectly, and delivery was super fast." -@Fallingsad</p>
+    </div>
+    <div class="testimonial">
+      <p>"Everything came as promised. Definitely buying again." -@SkylerBro31</p>
+    </div>
+    <div class="testimonial">
+      <p>"Easy transaction, fast delivery" -@Nova3023</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Need help or want to place an order?</p>
+    <a href="https://wa.me/6285135412495" target="_blank">Chat via WhatsApp</a>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
